@@ -41,7 +41,7 @@ def product_list(request, category_slug=None):
     context = {
         'category': category,
         'categories': categories,
-        'products': products_queryset, # Передаем объект Page (не просто список) в шаблон
+        'products': products_queryset,
     }
     return render(request, 'shop/product/list.html', context)
 
